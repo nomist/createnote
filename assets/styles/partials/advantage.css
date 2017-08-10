@@ -1,0 +1,130 @@
+.advantage {
+	background-image: url("./images/advantage-bg.jpg");
+  min-width: 1100px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+
+.advantage__wrapper {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantage__title {
+	position: relative;
+  margin: 125px 0px 0px 0px;
+  padding: 0px;
+  font-family: MuseoSans;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 100;
+}
+
+.advantage__title-big {
+	position: relative;
+	margin: 0px;
+	margin-top: 14px;
+	padding: 0px;
+	font-family: MuseoSans;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+	letter-spacing: 0.8px;
+  color: #ffffff;
+  z-index: 100;
+}
+
+.advantage__title-big-bold {
+	position: relative;
+	font-weight: 900;
+	color: #ffec00;
+	z-index: 100;
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: #000000;
+		z-index: -1;
+		transform: rotate(-3deg);
+	}
+}
+
+.advantage__all-items {
+	position: relative;
+}
+
+.advantage__item {
+	width: 25%;
+	float: left;
+}
+
+.advantage__circle {
+	margin: 126px auto 27px auto;
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	line-height: 160px;
+	border: 2px solid #ffec00;
+	color: #ffec00;
+  font-family: interface;
+	&:hover {
+		background-color: #ffec00;
+		box-shadow: 0px 0px 0px 8px rgba(255,236,0,1);
+		border: none;
+		color: #000000;
+	}
+}
+
+.advantage__circle--prototype {
+	&:before {
+		display: inline-block;
+		font-size: 96px;
+    content: "\e903";
+	}
+}
+
+.advantage__circle--creative {
+	&:before {
+		display: inline-block;
+		font-size: 111px;
+    content: "\e900";
+	}
+}
+
+.advantage__circle--simple {
+	&:before {
+		display: inline-block;
+		font-size: 68px;
+    content: "\e904";
+	}
+}
+
+.advantage__circle--sketch {
+	&:before {
+		display: inline-block;
+		font-size: 61px;
+    content: "\e905";
+	}
+}
+
+.advantage__description {
+	font-family: MuseoSans;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 17px;
+	letter-spacing: 0.7px;
+  margin: 0px 0px 173px 0px;
+  padding: 0px;
+}

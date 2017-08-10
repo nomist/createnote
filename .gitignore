@@ -1,0 +1,16 @@
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+# webstorm settings
+/.idea
+
+/node_modules
+/bower_components
+/build
+/manifest
+
+# favicon file
+faviconData.json

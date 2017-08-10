@@ -1,0 +1,39 @@
+.owl-carousel {
+  .owl-next, .owl-prev {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    &:before {
+      display: inline-block;
+      font-family: interface;
+    }
+    &:not(.disabled):hover {
+      text-shadow: 0px 0px 5px rgb(0,0,0,0.2);
+    }
+    &.disabled {
+      opacity: 0.24;
+      cursor: default;
+    }
+  }
+  .owl-next {
+    right: -9%;
+    &:before {
+      content: '\e901';
+      font-size: 50px;
+    }
+  }
+  .owl-prev {
+    left: -10%;
+    &:before {
+      content: '\e901';
+      font-size: 50px;
+      transform: rotate(180deg);
+    }
+  }
+}

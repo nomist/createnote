@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+  <title>Gulp Boilerplate</title>
+  <link rel="stylesheet" href="application.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#404040">
+  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/2ac13d1c70/UntitledProject/style.css">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+<div class="overlay" id="overlay">
+  <div class="popup" id="popup">
+    <div class="popup__wrapper">
+      <h1 class="popup__title">Оформление <span class="popup__title-modified">заявки</span></h1>
+      <h2 class="popup__tagline">Заполните поля, чтобы мы смогли отправить вам товар</h2>
+      <hr class="popup__separator">
+      <div class="popup__options">
+        <div class="popup__format">
+          <p class="popup__option-title">Формат блокнота</p>
+          <input class="popup__format-input" type="radio" name="format" id="radio1" checked="checked"/>
+          <label class="popup__format-label" for="radio1">
+          A4</label>
+          <input class="popup__format-input" type="radio" name="format" id="radio2"/>
+          <label class="popup__format-label" for="radio2">
+          A5</label>
+        </div>
+
+        <div class="popup__count">
+          <p class="popup__option-title">Количество</p>
+          <input class="popup__count-input" type="number" value="1" min="1" max="10">
+        </div>
+
+        <div class="popup__color">
+          <p class="popup__option-title">Выберите цвет</p>
+          <input class="popup__color-input" type="radio" name="color" id="radio3" checked="checked"/>
+          <label class="popup__color-label" for="radio3">
+          Черный</label>
+          <input class="popup__color-input" type="radio" name="color" id="radio4"/>
+          <label class="popup__color-label popup__color-label-yellow" for="radio4">
+          Желтый</label>
+        </div>
+      </div>
+      <div id="messenger"></div>
+      <form action="" method="get" class="popup__info" id="popup__info">
+        <div class="message js-form-message"></div>
+        <div class="popup__info-input">
+          <label class="popup__info-label" for="name">Имя<span class="popup__info-label-required">*</span></label>
+          <input class="popup__info-field" type="text" name="name">
+        </div>
+        <div class="popup__info-input">
+          <label class="popup__info-label" for="surname">Фамилия<span class="popup__info-label-required">*</span></label>
+          <input class="popup__info-field" type="text" name="surname">
+        </div>
+        <div class="popup__info-input">
+          <label class="popup__info-label" for="telephone">Телефон<span class="popup__info-label-required">*</span></label>
+          <input class="popup__info-field" type="tel" name="telephone" id="telephone">
+        </div>
+        <div class="popup__info-input">
+          <label class="popup__info-label" for="email">Мейл<span class="popup__info-label-required">*</span></label>
+          <input class="popup__info-field" type="email" name="email">
+        </div>
+        <div class="popup__info-input">
+          <label class="popup__info-label" for="city">Город</label>
+          <input class="popup__info-field" type="text" name="city">
+        </div>
+        <div class="popup__info-input">
+          <label class="popup__info-label" for="post_office">Отделение новой почты</label>
+          <input class="popup__info-field" type="text" name="post_office">
+        </div>
+        <div class="popup__info-clearfix"></div>
+        <button class="popup__button" type="submit">Заказать</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header__wrapper">
+    <a href="#call-to-action" class="header__logo">
+      <img class="header__logo-img" src="./images/logo.png" width="73" height="47">
+    </a>
+    <nav class="menu">
+      <a class="menu__item" href="#call-to-action"><span class="menu__item-underline">Главная</span></a>
+      <a class="menu__item" href="#must-have"><span class="menu__item-underline">О продукте</span></a>
+      <a class="menu__item" href="#advantage"><span class="menu__item-underline">Преимущества</span></a>
+      <a class="menu__item" href="#gallery"><span class="menu__item-underline">Галерея</span></a>
+      <a class="menu__item" href="#buy"><span class="menu__item-underline">Оплата</span></a>
+    </nav>
+    <button class="header__button show_popup">Заказать</button>
+  </div>
+</header>
+
+<div class="call-to-action" id="call-to-action">
+  <div class="call-to-action__wrapper">
+    <div class="call-to-action__info">
+      <h1 class="call-to-action__title">Блокноты в точечную сетку<br><span class="call-to-action__title-big">для дизайнеров</span></h1>
+      <p class="call-to-action__tagline">Теперь в двух цветах желтый и черный!</p>
+      <button class="call-to-action__button show_popup">Заказать</button>
+      <p class="call-to-action__description">в наличии <span class="call-to-action__description-bold">А4</span> и <span class ="call-to-action__description-bold">А5</span> форматы</p>
+    </div>
+    <div class="call-to-action__scroll-button">
+      <span class="call-to-action__scroll-icon"></span>
+    </div>
+  </div>
+</div>
+
+<div class="must-have" id="must-have">
+  <div class="must-have__wrapper">
+    <div class="must-have__info">
+      <h1 class="must-have__title">Если ты классный дизайнер</h1>
+      <h2 class="must-have__title-big">You <span class="must-have__title-big-bold">must have</span> this</h2>
+    </div>
+
+    <div class="slider-notebook owl-carousel" id="main-slider">
+      <div class="slider-notebook__item">
+        <div class="slider-notebook__image slider-notebook__image--a5"></div>
+        <div class="slider-notebook__info">
+          <h1 class="slider-notebook__title">Блокнот А5 <span class="slider-notebook__price">200 грн.</span></h1>
+          <p class="slider-notebook__description">
+            Обложка - 300 гр/м2, матовая <br>
+            Бумага 80гр/м2 <br>
+            Формат листа - А5 <br>
+            Количество страниц- 100 <br>
+            Пружина расположена с длинной стороны (черная)
+          </p>
+          <h2 class="slider-notebook__title-colors">Доступные цвета</h2>
+          <div class="slider-notebook__colors-black"></div>
+          <div class="slider-notebook__colors-yellow"></div>
+          <button class="slider-notebook__button show_popup">Заказать</button>
+        </div>
+      </div>
+      <div class="slider-notebook__item">
+        <div class="slider-notebook__image slider-notebook__image--a4"></div>
+        <div class="slider-notebook__info">
+          <h1 class="slider-notebook__title">Блокнот А4 <span class="slider-notebook__price">250 грн.</span></h1>
+          <p class="slider-notebook__description">
+            Обложка - 300 гр/м2, матовая <br>
+            Бумага 80гр/м2 <br>
+            Формат листа - А4 <br>
+            Количество страниц- 100 <br>
+            Пружина расположена с длинной стороны (черная)
+          </p>
+          <h2 class="slider-notebook__title-colors">Доступные цвета</h2>
+          <div class="slider-notebook__colors-black"></div>
+          <div class="slider-notebook__colors-yellow"></div>
+          <button class="slider-notebook__button show_popup">Заказать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="advantage" id="advantage">
+  <div class="advantage__wrapper">
+    <h1 class="advantage__title">Основные преимущества</h1>
+    <h2 class="advantage__title-big">Блокнота в <span class="advantage__title-big-bold">точечную сетку</span></h2>
+    <div class="advantage__all-items">
+      <div class="advantage__item">
+        <div class="advantage__circle advantage__circle--prototype">
+        </div>
+        <p class="advantage__description">Максимально четкое построение прототипов и ui-схем</p>
+      </div>
+      <div class="advantage__item">
+        <div class="advantage__circle advantage__circle--creative">
+        </div>
+        <p class="advantage__description">Свободное воплощение своих креативных идей</p>
+      </div>
+      <div class="advantage__item">
+        <div class="advantage__circle advantage__circle--simple">
+        </div>
+        <p class="advantage__description">Простой и удобный попиксельный перенос рисунка в программы</p>
+      </div>
+      <div class="advantage__item">
+        <div class="advantage__circle advantage__circle--sketch">
+        </div>
+        <p class="advantage__description">Делайте скетчи для клиентов и показывайте клиентам и коллегам!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="gallery" id="gallery">
+  <div class="gallery__wrapper">
+    <h3 class="gallery__title-quantity">доступно 23 фотографии</h3>
+    <h1 class="gallery__title">Посмотрите детально</h1>
+    <div class="gallery__photos">
+      <div class="gallery__line-first">
+        <a class="gallery__photo gallery__photo--small" rel="group" href="./images/photos/_MG_6086.jpg" data-fancybox="gallery">
+          <img class="gallery__image-preview" alt="" src="./images/photos/_MG_6086_S.jpg">
+        </a>
+        <a class="gallery__photo gallery__photo--small" rel="group" href="./images/photos/_MG_6001.jpg" data-fancybox="gallery">
+          <img class="gallery__image-preview" alt="" src="./images/photos/_MG_6001_S.jpg">
+        </a>
+        <a class="gallery__photo gallery__photo--large" rel="group" href="./images/photos/_MG_6031.jpg" data-fancybox="gallery">
+          <img class="gallery__image-preview" alt="" src="./images/photos/_MG_6031_S.jpg">
+        </a>
+      </div>
+      <div class="gallery__line-second">
+        <a class="gallery__photo gallery__photo--small" rel="group" href="./images/photos/_MG_6100.jpg" data-fancybox="gallery">
+          <img class="gallery__image-preview" alt="" src="./images/photos/_MG_6100_S.jpg">
+        </a>
+        <a class="gallery__photo gallery__photo--small" rel="group" href="./images/photos/_MG_5996.jpg" data-fancybox="gallery">
+          <img class="gallery__image-preview" alt="" src="./images/photos/_MG_5996_S.jpg">
+        </a>
+        <a class="gallery__photo gallery__photo--small" rel="group" href="./images/photos/_MG_6106.jpg" data-fancybox="gallery">
+          <img class="gallery__image-preview" alt="" src="./images/photos/_MG_6106_S.jpg">
+        </a>
+        <a class="gallery__photo gallery__photo--small" rel="group" href="./images/photos/_MG_6020.jpg" data-fancybox="gallery">
+          <img class="gallery__image-preview" alt="" src="./images/photos/_MG_6020_S.jpg">
+        </a>
+        <a class="gallery__photo gallery__photo-hiden gallery__photo--small" rel="group" href="./images/photos/_MG_5980.jpg" data-fancybox="gallery"></a>
+        <a class="gallery__photo gallery__photo-hiden gallery__photo--small" rel="group" href="./images/photos/_MG_6028.jpg" data-fancybox="gallery"></a>
+        <a class="gallery__photo gallery__photo-hiden gallery__photo--small" rel="group" href="./images/photos/_MG_6081.jpg" data-fancybox="gallery"></a>
+        <a class="gallery__photo gallery__photo-hiden gallery__photo--small" rel="group" href="./images/photos/_MG_6087.jpg" data-fancybox="gallery"></a>
+        <a class="gallery__photo gallery__photo-hiden gallery__photo--small" rel="group" href="./images/photos/_MG_6105.jpg" data-fancybox="gallery"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="steps">
+  <div class="steps__wrapper">
+    <h1 class="steps__title">Как получить блокнот?</h1>
+    <h3 class="steps__title-small">Все на самом деле очень просто</h3>
+    <div class="steps__items-all">
+      <div class="steps__item">
+        <div class="steps__circle">1</div>
+        <p class="steps__description">Выбираете </br>блокнот</p>
+      </div>
+      <div class="steps__item">
+        <div class="steps__circle">2</div>
+        <p class="steps__description">Заполняете </br>необходимые поля</p>
+      </div>
+      <div class="steps__item">
+        <div class="steps__circle">3</div>
+        <p class="steps__description">Менеджер </br>подтверждает заказ</p>
+      </div>
+      <div class="steps__item">
+        <div class="steps__circle">4</div>
+        <p class="steps__description">Делаете предоплату или </br>оплачиваете при получении</p>
+      </div>
+      <div class="steps__item">
+        <div class="steps__circle">5</div>
+        <p class="steps__description">Забираете блокнот </br>в отделении почты</p>
+      </div>
+      <div class="steps__progress-line"></div>
+    </div>
+  </div>
+</div>
+
+<div class="buy" id="buy">
+  <div class="buy__wrapper">
+    <div class="buy__title">
+      <h1 class="buy__title-large">Креативничай в <span class="buy__title-bold">Createnote</span></h1>
+      <h3 class="buy__title-small">покупай <span class="buy__title-dark">и твори!</span></h3>
+    </div>
+    <div class="buy__items">
+      <div class="buy__item">
+        <div class="buy__image buy__image--a4">
+          <span class="buy__price">250 грн.</span>
+        </div>
+        <div class="buy__info">
+          <h1 class="buy__item-title">Блокнот А4</h1>
+          <p class="buy__item-description">
+            Обложка -300 гр/м2, матовая<br>
+            Бумага 80гр/м2<br>
+            Формат листа - А4<br>
+            Количество cтраниц - 100<br>
+            Пружина расположена с длинной стороны (черная)<br>
+          </p>
+          <button class="buy__button show_popup">Заказать</button>
+        </div>
+      </div>
+      <div class="buy__item">
+        <div class="buy__image buy__image--a5">
+          <span class="buy__price">200 грн.</span>
+        </div>
+        <div class="buy__info">
+          <h1 class="buy__item-title">Блокнот А5</h1>
+          <p class="buy__item-description">
+            Обложка -300 гр/м2, матовая<br>
+            Бумага 80гр/м2<br>
+            Формат листа - А5<br>
+            Количество cтраниц - 100<br>
+            Пружина расположена с длинной стороны (черная)
+          </p>
+          <button class="buy__button show_popup">Заказать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="follow-us">
+  <div class="follow-us__wrapper">
+    <h1 class="follow-us__title">Фолловь нас</h1>
+    <div class="follow-us__icons">
+      <div class="follow-us__icon follow-us__icon--facebook"></div>
+      <div class="follow-us__icon follow-us__icon--twitter"></div>
+      <div class="follow-us__icon follow-us__icon--instagram"></div>
+      <div class="follow-us__icon follow-us__icon--blogger"></div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__wrapper">
+    <p class="footer__rights">
+      © 2016 “CREATE NOTE” блокнот веб-дизайнера | Все права защищены
+    </p>
+    <p class="footer__created">
+      Created by a designer for designers "
+      <a href="#" class="footer__link">I`m on dribbble</a>"
+    </p>
+  </div>
+</footer>
+
+<script src="./vendor.js"></script>
+<script src="./application.js"></script>
+
+</body>
+</html>

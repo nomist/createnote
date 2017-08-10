@@ -1,0 +1,43 @@
+.featherlight .featherlight-content {
+  background-color: #000000;
+  text-align: center;
+  margin: 0;
+  padding: 10px 10px 0px;
+  border-bottom: 10px solid transparent;
+}
+
+.featherlight .featherlight-close-icon {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.featherlight-previous {
+  font-family: interface;
+  transform: rotate(180deg);
+  top: 10px;
+  left: 10px;
+  span {
+    font-size: 50px;
+    left: 30px;
+    text-shadow: none;
+  }
+  &:hover {
+    background: none;
+  }
+}
+
+.featherlight-next {
+  font-family: interface;
+  transform: rotate(360deg);
+  top: 10px;
+  right: 10px;
+  span {
+    font-size: 50px;
+    left: 30px;
+    text-shadow: none;
+  }
+  &:hover {
+    background: none;
+  }
+}

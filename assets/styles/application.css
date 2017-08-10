@@ -1,0 +1,23 @@
+@import "normalize-css/normalize";
+@import "owl.carousel/dist/assets/owl.carousel";
+@import "featherlight/release/featherlight.min";
+@import "featherlight/release/featherlight.gallery.min";
+
+@import "settings/owl.carousel.fix";
+@import "settings/featherlight.gallery.fix";
+@import "settings/defaults";
+@import "settings/fonts";
+
+@import "partials/popup";
+@import "partials/header";
+@import "partials/menu";
+@import "partials/call-to-action";
+@import "partials/must-have";
+@import "partials/slider-notebook";
+@import "partials/advantage";
+@import "partials/gallery";
+@import "partials/steps";
+@import "partials/buy";
+@import "partials/follow-us";
+@import "partials/footer";
+@import "partials/validation";

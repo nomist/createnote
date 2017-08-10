@@ -1,0 +1,130 @@
+.call-to-action {
+  background-image: url("./images/presentation-image.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-width: 1100px;
+  text-align: center;
+}
+
+.call-to-action__wrapper {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+.call-to-action__info {
+  display: block;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  transform: translateY(-50%);
+}
+
+.call-to-action__title {
+  margin: 0px;
+  padding: 0px;
+  font-family: MuseoSans;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.81px;
+  line-height: 62px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 8px 8px rgba(0,0,0,0.24);
+}
+
+.call-to-action__title-big {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.call-to-action__tagline {
+  margin: 0px;
+  margin-bottom: 25px;
+  padding: 0px;
+  font-family: MuseoSans;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.81px;
+  color: #ffffff;
+  text-shadow: 0 8px 8px rgba(0,0,0,0.24);
+}
+
+.call-to-action__button {
+  background-color: #ffec00;
+  text-transform: uppercase;
+  font-family: MuseoSans;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 4.6px;
+  color: #000000;
+  padding: 24px 84px;
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: #ffde00;
+  }
+}
+
+.call-to-action__description {
+  margin: 0px;
+  margin-top: 25px;
+  padding: 0px;
+  font-family: MuseoSans;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.call-to-action__description-bold {
+  font-weight: 700;
+}
+
+.call-to-action__scroll-icon {
+  &:before {
+    display: block;
+    position: absolute;
+    font-family: interface;
+    content: "\e907";
+    transform: rotate(-45deg);
+    color: #000000;
+    font-size: 10px;
+    margin: 0 auto;
+    top: 28%;
+    bottom: 28%;
+    left: -30%;
+    right: -30%;
+  }
+}
+
+.call-to-action__scroll-button {
+  display: block;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  background-color: #ffec00;
+  position: absolute;
+  bottom: -75px;
+  left: 0px;
+  right: 0px;
+  border-radius: 16px;
+  transform: rotate(45deg);
+  border: 1px solid #716800;
+  &:hover {
+    .call-to-action__scroll-icon:before {
+      top: 30%;
+      bottom: 30%;
+    }
+  }
+}

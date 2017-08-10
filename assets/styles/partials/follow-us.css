@@ -1,0 +1,92 @@
+.follow-us {
+	background-color: #ffec00;
+  min-width: 1100px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.follow-us__wrapper {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.follow-us__title {
+  position: relative;
+  margin: 0px;
+  margin-top: 50px;
+  padding: 0px;
+  font-family: MuseoSans;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.follow-us__icons {
+  margin-top: 34px;
+  margin-bottom: 65px;
+}
+
+.follow-us__icon {
+  display: inline-block;
+  line-height: 53px;
+  height: 53px;
+  width: 53px;
+  border: 1px solid #000000;
+  transform: rotate(45deg);
+  margin-right: 38px;
+  color: #000000;
+  font-family: socicon;
+  vertical-align: middle;
+  &:nth-child(4) {
+    margin-right: 0px;
+  }
+  &:hover {
+    background-color: #000000;
+    color: #ffec00;
+  }
+}
+
+.follow-us__icon--facebook {
+  &:before {
+    margin: 0 auto;
+    display: block;
+    font-size: 26px;
+    content: "\e028";
+    transform: rotate(-45deg);
+  }
+}
+
+.follow-us__icon--twitter {
+  &:before {
+    margin: 0 auto;
+    display: block;
+    font-size: 26px;
+    content: "\e08d";
+    transform: rotate(-45deg);
+  }
+}
+
+.follow-us__icon--instagram {
+  &:before {
+    margin: 0 auto;
+    display: block;
+    font-size: 26px;
+    content: "\e044";
+    transform: rotate(-45deg);
+  }
+}
+
+.follow-us__icon--blogger {
+  &:before {
+    margin: 0 auto;
+    display: block;
+    font-size: 26px;
+    content: "\e012";
+    transform: rotate(-45deg);
+  }
+}

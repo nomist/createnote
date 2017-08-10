@@ -1,0 +1,49 @@
+.footer {
+	background-color: #262825;
+  min-width: 1100px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.footer__wrapper {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer__rights {
+  position: relative;
+  margin: 0px;
+  margin-top: 48px;
+  padding: 0px;
+  font-family: MuseoSans;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.footer__created {
+  position: relative;
+  margin: 0px;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  padding: 0px;
+  font-family: MuseoSans;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-family: MuseoSans;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+}

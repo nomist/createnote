@@ -1,0 +1,14 @@
+.popup__info-field {
+  &.error {
+    border: 2px solid #fd5338;
+  }
+}
+label.error {
+  position: absolute;
+  color: #fd5338;
+  font-family: MuseoSans;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 2px;
+  color: #fd5338;
+}

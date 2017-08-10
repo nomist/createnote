@@ -1,0 +1,26 @@
+.menu {
+  margin: auto;
+}
+
+.menu__item {
+  outline:none !important;
+  text-decoration: none;
+  font-family: MuseoSans;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px;
+  padding: 15px 18px;
+  &:hover {
+    background-color: #ffec00;
+    color: #000000;
+  }
+}
+
+.menu__item--active .menu__item-underline {
+  border-bottom: 3px solid #ffec00;
+  padding-bottom: 12px;
+}
