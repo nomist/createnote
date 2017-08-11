@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   linksList.push($(document).height());
 
-  $('.menu__item').click(function(e) {
+  $('.menu__item, .call-to-action__scroll-button').click(function(e) {
     e.preventDefault();
     var href = $(this).attr("href"),
         destination = $(href).offset().top,

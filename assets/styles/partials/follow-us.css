@@ -42,6 +42,7 @@
   color: #000000;
   font-family: socicon;
   vertical-align: middle;
+	text-decoration: none;
   &:nth-child(4) {
     margin-right: 0px;
   }
