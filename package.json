@@ -4,7 +4,9 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "featherlight": "git+https://github.com/noelboss/featherlight.git"
+    "featherlight": "git+https://github.com/noelboss/featherlight.git",
+    "jquery-validation": "^1.17.0",
+    "owl.carousel": "https://github.com/OwlCarousel2/OwlCarousel2.git"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",

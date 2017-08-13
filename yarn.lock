@@ -1882,6 +1882,10 @@ fd-slicer@~1.0.1:
   dependencies:
     pend "~1.2.0"
 
+"featherlight@git+https://github.com/noelboss/featherlight.git":
+  version "1.7.8"
+  resolved "git+https://github.com/noelboss/featherlight.git#6940e91eabc42d015f2fe45aecbae2bdac2011df"
+
 figures@^1.3.5:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-1.7.0.tgz#cbe1e3affcf1cd44b80cadfed28dc793a9701d2e"
@@ -3043,7 +3047,13 @@ jpegtran-bin@^3.0.0:
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
 
-jquery@^3.2.1:
+jquery-validation@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/jquery-validation/-/jquery-validation-1.17.0.tgz#ab66b6b583d7740b9bbd148993e50e8ac041f35b"
+  dependencies:
+    jquery "^1.7 || ^2.0 || ^3.1"
+
+jquery@>=1.8.3, "jquery@^1.7 || ^2.0 || ^3.1", jquery@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 
@@ -3924,6 +3934,12 @@ osenv@^0.1.4:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
+
+"owl.carousel@https://github.com/OwlCarousel2/OwlCarousel2.git":
+  version "2.2.1"
+  resolved "https://github.com/OwlCarousel2/OwlCarousel2.git#716474f2335242aa24b2d79c554b3496922c22bd"
+  dependencies:
+    jquery ">=1.8.3"
 
 p-finally@^1.0.0:
   version "1.0.0"
