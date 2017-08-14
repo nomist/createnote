@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  max-height: 900px;
   min-width: 1100px;
   text-align: center;
 }
